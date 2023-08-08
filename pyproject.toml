@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "rabit-pure"
+version = "0.1.0"
+description = ""
+authors = ["mohmdfo <mohammad.fotouhi80@gmail.com>"]
+readme = "README.md"
+packages = [{include = "rabit_pure"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
