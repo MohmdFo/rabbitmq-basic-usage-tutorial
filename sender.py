@@ -16,12 +16,12 @@ connection = pika.BlockingConnection(connection_params)
 
 channel = connection.channel()
 
-channel.queue_declare(queue='second-test')
+channel.queue_declare(queue='third-test')
 
-message_body = 'Hello, world!!..'
+message_body = 'Hello, world!...'
 
-channel.basic_publish(exchange='', routing_key='second-test', body=message_body)
+channel.basic_publish(exchange='', routing_key='third-test', body=message_body)
 
-print(f"Message sent to 'second-test' queue: {message_body}")
+print(f"Message sent to 'third-test' queue: {message_body}")
 
 connection.close()

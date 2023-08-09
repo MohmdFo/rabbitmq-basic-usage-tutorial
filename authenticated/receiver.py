@@ -1,6 +1,9 @@
 import pika
 
 
+# NOTE: In real world you should get your username and password from a setting file
+# That could be a toml file or something like that
+# We don't public credentials data in git
 credentials = pika.PlainCredentials('mohammad', 'mohammad')
 
 connection_params = pika.ConnectionParameters(
